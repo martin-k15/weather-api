@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Weather API</title>
+
+    <link rel="preload" href="./dist/style.css" as="style">
+    <link rel="preload" href="./script.js" as="script">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+
+    <meta name="author" content="Martin Kostka">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="./dist/style.css">
+    <script src="./script.js" defer></script>
+    <script async
+        src="https://api.countapi.xyz/hit/martanovo-testovaci-3.wz.cz/fd1cb5ab-5823-4800-8f0d-0e4681a037cf?callback=websiteVisits"></script>
+    
+    
+</head>
+
+<body>
+    <div class="box">
+        <h1 class="box__header">Weather API</h1>
+        <div class="search">
+            <input type="search" name="search" id="" placeholder="Enter a city.." class="search__input">
+            <button type="Submit" class="search__button">&#x1F50E;&#xFE0E;</button>
+
+        </div>
+        <span class="error"></span>
+
+        <div class="box__weather city-load">
+            <div class="info delay">
+                <h2 class="box__weather--city-name"></h2>
+
+                <span class="box__weather--city-temp"></span>
+
+                <span class="box__weather--city-desc"></span>
+            </div>
+
+            <img src="" class="box__weather--city-icon delay" alt="">
+
+        </div>
+    </div>
+    <div class="visits">
+        <span class="visits__text">This site has been visited <span id="visits"></span> times.</span>
+    </div>
+  
+</body>
+
+</html>
